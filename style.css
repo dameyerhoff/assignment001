@@ -1,0 +1,228 @@
+/* this changes the body background to display an image */
+body {
+  background-image: url("https://pbs.twimg.com/media/F3Q0yS6XUAA0s1o.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* this enables smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* this changes all paragraph text color and centralises it */
+p {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* this centers all link text */
+a {
+  text-align: center;
+}
+
+/* this changes all header text color and centralises the text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: yellow;
+  text-align: center;
+}
+
+/* Style the navigation bar */
+.mainNavbar {
+  width: 100%;
+  background-color: rgb(218, 16, 87);
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  align-items: flex-start;
+}
+
+/* Navbar links */
+.mainNavbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Navbar links on mouse-over */
+.mainNavbar a:hover {
+  background-color: blue;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: blue;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .mainNavbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/* This gives my default header some custom settings*/
+
+header {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+/* This defines individual box model settings, including flexbox for each*/
+
+.box01 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  border: 15px solid blue;
+  padding: 50px;
+  margin: 20px;
+  text-transform: uppercase;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.box02 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  border: 15px solid orangered;
+  padding: 50px;
+  margin: 20px;
+  text-transform: uppercase;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.box03 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  width: 200px;
+  height: 100px;
+  border: 15px solid red;
+  padding: 50px;
+  margin: 20px;
+  text-transform: uppercase;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+/* This defines individual sections for each box model. allowing me to give each section a background of it's own*/
+
+.section01 {
+  background-image: url("https://info.sonicretro.org/images/thumb/6/6d/Sonic1.png/204px-Sonic1.png");
+  background-repeat: repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.section02 {
+  background-image: url("https://info.sonicretro.org/images/thumb/6/6a/Tails.png/320px-Tails.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.section03 {
+  background-image: url("https://info.sonicretro.org/images/thumb/e/ef/Knuckles01_32.png/230px-Knuckles01_32.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+/* This changes the footer text color and also centers the text*/
+footer {
+  color: yellow;
+  text-align: center;
+}
+
+/* These are the span colors*/
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.orange {
+  color: orangered;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.myButton {
+  padding: 10px 20px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.myButton:hover {
+  background-color: #3e8e41;
+}
+
+.myBbutton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}

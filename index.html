@@ -7,7 +7,92 @@
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <p>1st Paragraph</p>
+
+
+    <header>
+
+      <!--This is my scrolling marquee using a sourced image-->
+      <marquee
+        style="color: #ff5733; font-size: 20px"
+        direction="right"
+        scrollamount="15"
+        ><img
+          src="https://wallpapers.com/images/hd/sonic-speed-blur-yr2orpd72pepl8y8.jpg"
+          width="50"
+        />
+      </marquee>
+
+      <!--This is my site logo image-->
+      <img
+        src="https://cerealkillerz.org/wp-content/uploads/2023/11/sega-sonic-1280x720-1.jpg"
+        alt="sega logo"
+        width="320px"
+        height="180px"
+      />
+      <!-- NAVBAR CODE -->
+
+<!-- This is to make my nav bar responsive. The # would be for a link to another page or anchor within the same page -->
+        <nav class="mainNavbar">
+          <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+          <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+          <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        </nav>
+
+      <!-- Load an icon library -->
+      <nav class="mainNavbar">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        
+      
+    </header>
+
+    <!-- This adds an audio file to the site, sourced from an external url -->
+<audio controls src="https://us-tuna-sounds-files.voicemod.net/9f9d3bef-2a06-4d7e-ad8a-e47eac6ad207-1665091502708.mp3" autoplay=""></audio>
+
+    <h1>Welcome to Sega Land!</h1>
+
+    <main>
+
+      <!-- We want to make 3 boxes and categorise them into 3 sections -->
+
+      <section class="section01">
+      <div class="box01">
+      <h2>This is Sonic</h2>
+    <p>He is <span class="blue">blue.</span></p>
+  <a href="#top"><button class="myButton">Back to top ^</button></a>
+  </div>
+  </section>
+
+      <section class="section02">
+      <div class="box02">
+      <h2>This is Tails</h2>
+    <p>He is <span class="orange">orange.</span></p>
+ <a href="#top"><button class="myButton">Back to top ^</button></a>
+  </div>
+  </section>
+
+      <section class="section03">
+      <div class="box03">
+      <h2>This is Knuckles</h2>
+    <p>He is <span class="red">red.</span></p>
+ <a href="#top"><button class="myButton">Back to top ^</button></a>
+  </div>
+  </section>
+
+  </main>
+
+    <footer>
+<p>Made by David Meyerhoff &copy 2026</p>
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+      </footer>
   </body>
 </html>
